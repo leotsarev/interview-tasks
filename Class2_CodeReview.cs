@@ -1,3 +1,4 @@
+CODE FOR REVIEW:
 class Class2
     {
         private readonly object _sync = new object();
@@ -28,7 +29,9 @@ class Class2
 
     }
 
-class DataProvider
+EXTERNAL CODE
+
+public class DataProvider : IDisposable
 {
     public int LongRunningCalculation(int value)
        {

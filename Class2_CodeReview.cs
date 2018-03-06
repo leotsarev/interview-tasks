@@ -1,3 +1,13 @@
+
+//EXTERNAL CODE
+//Приведен только для справки, никак нельзя менять, код обфусцирован, исходников нет
+public class DataProvider : IDisposable
+{
+    public int LongRunningCalculation(int value, int value2)
+    {
+    }
+}
+
 // CODE FOR REVIEW:
 class Class2
     {
@@ -29,13 +39,4 @@ class Class2
                 _ht[new [] { i, j }] = provider.LongRunningCalculation(i, j);
     }
 
-}
-
-//EXTERNAL CODE
-//Приведен только для справки, никак нельзя менять, код обфусцирован, исходников нет
-public class DataProvider : IDisposable
-{
-    public int LongRunningCalculation(int value, int value2)
-    {
-    }
 }

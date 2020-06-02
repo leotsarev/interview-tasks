@@ -1,11 +1,12 @@
+using System;
+using System.Collections.Generic;
 
 //EXTERNAL CODE
 //Приведен только для справки, никак нельзя менять, код обфусцирован, исходников нет
 public sealed class DataProvider : IDisposable
 {
-    public int LongRunningCalculation(int value, int value2)
-    {
-    }
+    public extern int LongRunningCalculation(int value, int value2);
+    public extern void Dispose();
 }
 
 // CODE FOR REVIEW:
@@ -35,7 +36,7 @@ class Class2
     {
         DataProvider provider = new DataProvider();
         for (int i = 0; i < 100; i++)
-            for (int j = 1; j <= 12; i++)
+            for (int j = 1; j <= 12; j++)
                 _ht[new [] { i, j }] = provider.LongRunningCalculation(i, j);
     }
 

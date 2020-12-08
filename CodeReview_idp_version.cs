@@ -19,7 +19,7 @@ class Class2
         int Value {get;set;}
     }
     private readonly object _sync = new object();
-    private static List<int[], int> list;
+    private static List<ListEntry> list;
 
     public int GetValue(int index, int index2)
     {

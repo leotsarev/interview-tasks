@@ -33,7 +33,7 @@ class Class2
 
     public void Init()
     {
-        if (_ht == null)
+        if (list == null)
             lock (_sync)
                 Create();
     }
